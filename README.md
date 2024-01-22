@@ -36,19 +36,6 @@ Before using the migrator, ensure Rust, OpenSSL, and pkg-config are installed on
 1. **Install Rust**: 
    Follow the instructions on the [official Rust website](https://www.rust-lang.org/tools/install) to install Rust.
 
-### Rust Installation on Linux or macOS
-
-To install Rust, including both the Rust compiler (`rustc`) and Cargo (the Rust package manager), follow these steps:
-
-1. Open a terminal.
-1a. Execute the following command:
-   ```bash
-   curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh 
-
-   - rustc --version
-   - cargo --version
-  
-
 2. **Install OpenSSL**: 
    - Ubuntu: `sudo apt-get install libssl-dev`
    - Fedora: `sudo dnf install openssl-devel`
@@ -56,6 +43,7 @@ To install Rust, including both the Rust compiler (`rustc`) and Cargo (the Rust 
 3. **Install pkg-config**:
    - Ubuntu: `sudo apt-get install pkg-config`
    - Fedora: `sudo dnf install pkg-config`
+
 
 ### Running the Migrator
 
