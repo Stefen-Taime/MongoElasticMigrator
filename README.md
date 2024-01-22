@@ -59,7 +59,49 @@ To install Rust, including both the Rust compiler (`rustc`) and Cargo (the Rust 
 
 ### Running the Migrator
 
-After installing the prerequisites, configure the tool using `config.toml` and run it:
+
+After running `cargo run`, if the migration is successful, you should see output similar to the following:
+
+This output indicates that:
+- Each "Document successfully indexed" message corresponds to a single document that has been successfully transferred to Elasticsearch.
+- "Total documents indexed to Elasticsearch: xxx" shows the total number of documents that were migrated.
+- "Data migration completed in X.XXXs" indicates the total time taken for the migration process.
+
+## Using Docker for MongoDB and Elasticsearch
+
+If you don't have MongoDB and Elasticsearch set up, you can use the provided Docker configurations to start these services:
+
+1. Navigate to the `docker` directory:
+   ```bash
+   cd docker
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+MIT License
+
+Copyright (c) [2024] [Stefen-Taime]
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+
 
 ```bash
 cargo run
