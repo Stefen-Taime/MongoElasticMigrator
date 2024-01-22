@@ -26,6 +26,8 @@ filter = "{\"key\": \"value\"}"
 uri = "http://elasticsearch_host:port"
 index_name = "your_index_name"
 
+```
+
 
 ## Usage
 
@@ -41,12 +43,10 @@ Before using the migrator, ensure Rust, OpenSSL, and pkg-config are installed on
 To install Rust, including both the Rust compiler (`rustc`) and Cargo (the Rust package manager), follow these steps:
 
 1. Open a terminal.
-1a. Execute the following command:
+2. Execute the following command:
    ```bash
-   curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh 
+   curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
-   - rustc --version
-   - cargo --version
   
 
 2. **Install OpenSSL**: 
@@ -100,7 +100,6 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
 
 
 ```bash
