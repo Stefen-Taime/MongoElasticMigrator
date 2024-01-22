@@ -28,13 +28,16 @@ index_name = "your_index_name"
 
 
 ## Usage
+
 Before using the migrator, ensure Rust, OpenSSL, and pkg-config are installed on your system.
 
 ### Prerequisites
+
 1. **Install Rust**: 
    Follow the instructions on the [official Rust website](https://www.rust-lang.org/tools/install) to install Rust.
 
 ### Rust Installation on Linux or macOS
+
 To install Rust, including both the Rust compiler (`rustc`) and Cargo (the Rust package manager), follow these steps:
 
 1. Open a terminal.
@@ -55,6 +58,8 @@ To install Rust, including both the Rust compiler (`rustc`) and Cargo (the Rust 
    - Fedora: `sudo dnf install pkg-config`
 
 ### Running the Migrator
+
+
 After running `cargo run`, if the migration is successful, you should see output similar to the following:
 
 This output indicates that:
@@ -63,6 +68,7 @@ This output indicates that:
 - "Data migration completed in X.XXXs" indicates the total time taken for the migration process.
 
 ## Using Docker for MongoDB and Elasticsearch
+
 If you don't have MongoDB and Elasticsearch set up, you can use the provided Docker configurations to start these services:
 
 1. Navigate to the `docker` directory:
@@ -70,6 +76,7 @@ If you don't have MongoDB and Elasticsearch set up, you can use the provided Doc
    cd docker
 
 ## License
+
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 MIT License
