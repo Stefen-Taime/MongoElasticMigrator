@@ -73,7 +73,7 @@ If you don't have MongoDB and Elasticsearch set up, you can use the provided Doc
 
 1. Navigate to the `docker` directory:
    ```bash
-   cd docker
+   cd docker && docker-compose up --build -d
 
 ## License
 
