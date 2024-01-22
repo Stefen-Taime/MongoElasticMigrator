@@ -1,0 +1,9 @@
+[mongodb]
+uri = "mongodb://root:example@172.20.0.4:27017"
+database_name = "beer_database"
+collection_name = "beers"
+
+[elasticsearch]
+uri = "http://172.20.0.2:9200"
+index_name = "beers"
+
